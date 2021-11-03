@@ -1,0 +1,7 @@
+<!--pages/6-swiper/swiper.wxml-->
+<button type="primary" bindtap="handleTap">Ajax话剧</button>
+<swiper indicator-dots="true" autoplay="true" interval="3000" circular="true">
+  <swiper-item wx:for="{{dataList}}" wx:key="index">
+    <image src="{{item.image_url}}" mode="widthFix"></image>
+  </swiper-item>
+</swiper>

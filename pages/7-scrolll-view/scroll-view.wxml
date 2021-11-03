@@ -1,0 +1,16 @@
+<!--pages/7-scrolll-view/scroll-view.wxml-->
+
+
+<scroll-view class="horizon" scroll-x="true" enable-flex="true">
+  <view class="item_h">AAAAAAAA</view>
+  <view class="item_h">BBBBBBBBBB</view>
+  <view class="item_h">CCCCCCCCCC</view>
+</scroll-view>
+
+<scroll-view class="vertical" scroll-y="true" refresher-enabled="true" refresher-triggered="{{isRefreshing}}" bindrefresherrefresh="handleRefresh"
+bindscrolltolower="handleLower">
+  <view class="item_v">AAAAAA</view>
+  <view class="item_v">BBBBBB</view>
+  <view class="item_v">CCCCCC</view>
+</scroll-view>
+

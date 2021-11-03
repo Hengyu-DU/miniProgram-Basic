@@ -1,0 +1,7 @@
+function goodsFilter(list,searchTerm){
+  return list.filter(function(item){
+    return item.indexOf(searchTerm) !== -1
+  })
+}
+
+module.exports = goodsFilter

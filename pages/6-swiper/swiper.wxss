@@ -1,0 +1,15 @@
+/* pages/6-swiper/swiper.wxss */
+
+button{
+  margin-top: 30rpx;
+}
+
+swiper{
+  width: 100%;
+  margin-top: 20rpx;
+  height: 314rpx;
+}
+
+image{
+  width: 100%;
+}

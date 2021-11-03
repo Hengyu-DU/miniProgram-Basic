@@ -1,0 +1,11 @@
+<!--pages/3-rpx/rpx.wxml-->
+<view class="demo"></view>
+
+<!-- 
+  iphone6 中 1px = 0.5rpx
+  dip：375 px
+  满屏：750 rpx
+
+  其他机型和尺寸会自动适配
+
+ -->

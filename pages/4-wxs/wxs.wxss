@@ -1,0 +1,10 @@
+/* pages/4-wxs/wxs.wxss */
+input{
+  box-sizing: border-box;
+  width: 750rpx;
+  height: 80rpx;
+  border: black 4rpx solid;
+  border-radius: 16rpx;
+  margin: 10rpx auto;
+  padding: 0 10rpx;
+}

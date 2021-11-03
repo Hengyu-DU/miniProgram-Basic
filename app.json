@@ -1,13 +1,38 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/5-request/request",
+    "pages/demo/demo",
+    "pages/center/center"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#00b26a",
+    "navigationBarTitleText": "我的小程序",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#00b26a",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/5-request/request",
+      "text": "主页",
+      "iconPath": "public/icon/home.png",
+      "selectedIconPath": "public/icon/home1.png"
+    },
+    {
+      "pagePath": "pages/demo/demo",
+      "text": "功能",
+      "iconPath": "public/icon/cart.png",
+      "selectedIconPath": "public/icon/cart1.png"
+    },
+    {
+      "pagePath": "pages/center/center",
+      "text": "个人中心",
+      "iconPath": "public/icon/nickname.png",
+      "selectedIconPath": "public/icon/nickname1.png"
+    }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

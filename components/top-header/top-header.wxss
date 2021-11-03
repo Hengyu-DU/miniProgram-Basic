@@ -1,0 +1,6 @@
+/* components/top-header/top-header.wxss */
+
+.box{
+  margin: 20rpx;
+  display: flex;
+}

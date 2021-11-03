@@ -1,0 +1,2 @@
+<!--components/timer/timer.wxml-->
+<view>{{time}}</view>

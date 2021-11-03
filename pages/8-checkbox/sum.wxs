@@ -1,0 +1,5 @@
+function sum(price,number){
+  return price*number
+}
+
+module.exports = sum

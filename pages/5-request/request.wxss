@@ -1,0 +1,27 @@
+/* pages/5-request/request.wxss */
+
+button{
+  margin-top: 30rpx;
+}
+
+image{
+  width: 170rpx;
+  background-color: gray;
+}
+
+.block{
+  height: 280rpx;
+  width: 170rpx;
+  float: left;
+  margin: 8rpx;
+}
+
+.name{
+  max-width: 170rpx;
+  height: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  font-size: 24rpx;
+  font-weight: 700;
+}

@@ -1,0 +1,17 @@
+/* pages/10-slot/slot.wxss */
+
+.icon-wrapper{
+  width: 300rpx;
+  position: relative;
+  top: 350rpx;
+  left: 50%;
+  margin-left: -150rpx;
+  opacity: 0%;
+  transition: 200ms;
+}
+
+.show{
+  top: 300rpx;
+  opacity: 100%;
+  transition: 200ms;
+}

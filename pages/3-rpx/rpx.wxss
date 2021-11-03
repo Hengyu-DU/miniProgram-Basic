@@ -1,0 +1,6 @@
+/* pages/3-rpx/rpx.wxss */
+.demo{
+  width: 750rpx;
+  height: 750rpx;
+  background-color: wheat;
+}

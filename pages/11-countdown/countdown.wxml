@@ -1,0 +1,3 @@
+<!--pages/11-countdown/countdown.wxml-->
+<text>抢购倒计时</text>
+<timer wx:if="{{isCreated}}" bindevent="handleEvent"></timer>

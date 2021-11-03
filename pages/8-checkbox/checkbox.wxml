@@ -1,0 +1,18 @@
+<!--pages/8-checkbox/checkbox.wxml-->
+<!-- 
+<wxs src="./sum.wxs" module="sum"></wxs> -->
+
+<checkbox-group bindchange="handleChange">
+  <label wx:for="{{goodsList}}" wx:key="index" >
+    <checkbox checked="{{item.isChecked}}" value="{{item.price*item.number}}"></checkbox>
+    <view>
+      <view> {{item.name}} </view> 
+      <view class="price"> 价格:￥{{item.price}}</view> 
+    </view>
+    <view>
+    {{item.number}}
+    </view>
+  </label>
+</checkbox-group>
+
+<view> 合计 ： {{sum}}</view>

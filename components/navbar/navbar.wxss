@@ -1,0 +1,18 @@
+/* components/navbar/navbar.wxss */
+.wrapper{
+  margin: 30rpx 0;
+  width: 750rpx;
+  display: flex;
+  justify-content:space-around;
+}
+.item{
+  padding: 2rpx 20rpx;
+  text-align: center;
+}
+.active{
+  color:rgb(1, 56, 1);
+  background-color: rgb(255, 221, 221);
+  padding: 2rpx 20rpx;
+  border-radius: 50rpx;
+  text-align: center;
+}

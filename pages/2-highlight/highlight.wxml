@@ -1,0 +1,7 @@
+<!--pages/2-highlight/highlight.wxml-->
+
+<view class='box'>
+  <view wx:for="{{list}}" wx:key="index" class="item {{current == index ? 'active' : ''}}" bindtap="handleTap" data-index="{{index}}">
+  <text>{{item}}</text>
+  </view>
+</view>

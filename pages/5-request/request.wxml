@@ -1,0 +1,9 @@
+<!--pages/5-request/request.wxml-->
+<wxs src="./convertUrl.wxs" module="convertUrl"></wxs>
+
+<button type="primary" bindtap="handleTap">Ajax请求电影</button>
+
+<view wx:for="{{dataList}}" wx:key="index" class='block'>
+  <image src="{{convertUrl(item.img)}}" mode="widthFix"></image>
+  <view class="name"> {{item.nm}}</view>
+</view>

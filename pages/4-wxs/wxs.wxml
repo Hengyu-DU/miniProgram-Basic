@@ -1,0 +1,26 @@
+<!--pages/4-wxs/wxs.wxml-->
+<wxs src='./wxs.wxs' module="handleTime" />
+<wxs src='./goodFilter.wxs' module="goodsFilter" />
+<view>{{handleTime(currentDate)}}</view>
+
+<!-- 
+
+每一个 .wxs 文件和 <wxs> 标签都是一个单独的模块。
+
+每个模块都有自己独立的作用域。即在一个模块里面定义的变量与函数，默认为私有的，对其他模块不可见。
+
+一个模块要想对外暴露其内部的私有变量与函数，只能通过 module.exports 实现
+
+引用：
+<wxs src="./../tools.wxs" module="tools" />
+
+ -->
+
+ <view>
+  <input bindinput="handleInput" />
+  
+  <view wx:for="{{goodsFilter(goodsList,mytext)}}" wx:key="index" >
+  {{item}}
+  </view>
+ 
+ </view>

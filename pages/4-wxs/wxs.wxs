@@ -1,0 +1,12 @@
+function handleTime(time){
+  var timeObj = getDate(time) //getDate() 返回一个时间string，可传入时间或时间戳
+  // console.log(timeObj);
+
+  var year = timeObj.getFullYear()
+  var month = timeObj.getMonth() + 1
+  var date = timeObj.getDate()
+
+  return '日期：' + year + '年' + (month<10?'0'+month:month) + '月' + (date<10?'0'+date:date) + '日'
+}
+
+module.exports = handleTime

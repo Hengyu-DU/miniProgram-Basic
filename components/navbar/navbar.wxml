@@ -1,0 +1,7 @@
+<!--components/navbar/navbar.wxml-->
+
+<label class="wrapper">
+  <view wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="handleTap" class="item {{current == index ? 'active' : ''}}">
+  <view>{{item}}</view>
+  </view>
+</label>

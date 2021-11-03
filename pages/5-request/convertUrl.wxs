@@ -1,0 +1,6 @@
+// api接口转换（根据network接口和网页实际图片地址对比得出的）
+function convertUrl(url){
+  return url.replace('/w.h','') + '@1l_1e_1c_128w_180h'
+}
+
+module.exports = convertUrl

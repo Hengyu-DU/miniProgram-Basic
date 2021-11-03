@@ -1,0 +1,30 @@
+/* pages/7-scrolll-view/scroll-view.wxss */
+
+.horizon{
+  width: 750rpx;
+  height: 555rpx;
+  background-color: wheat;
+  display: flex;
+}
+
+.item_h{
+  background-color: rgb(189, 248, 149);
+  border: black 2rpx solid;
+  margin: 10rpx;
+  width: 400rpx;
+  flex-shrink:0;
+}
+
+.vertical{
+  height: 555rpx;
+  background-color: rgb(189, 186, 186);
+}
+
+.item_v{
+  background-color: rgb(189, 248, 149);
+  border: black 2rpx solid;
+  margin: 10rpx;
+  width: 30rpx;
+  height: 300rpx;
+  word-wrap: break-word;
+}

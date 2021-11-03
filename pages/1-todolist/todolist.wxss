@@ -1,0 +1,52 @@
+/* pages/1-todolist/todolist.wxss */
+.wrapper{
+  height: 80px;
+  position: relative;
+  /* text-align: center; */
+}
+.input{
+  position: absolute;
+  box-sizing: border-box;
+  top: 30rpx;
+  left: 30rpx;
+  height: 40px;
+  width: 250px;
+  border: 1px rgb(221, 220, 220) solid;
+  border-radius: 4px;
+  background-color: rgb(247, 247, 247);
+  padding-left: 15px;
+}
+.mini-btn1{
+  height: 40px;
+  box-sizing: border-box;
+  width: 80px !important;
+  line-height: 40px !important;
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+}
+
+.list-wrapper{
+  margin: 30rpx;
+  margin-top: 0;
+}
+
+.list-item{
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-bottom: 0.5px solid rgb(221, 220, 220) ;
+}
+
+.mini-btn2{
+  position: absolute;
+  right: 30rpx;
+  top:5px;
+}
+
+.notice{
+  text-align: center;
+  margin-top: 250px;
+  color: rgb(189, 189, 189) ;
+}

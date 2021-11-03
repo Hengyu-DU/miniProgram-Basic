@@ -1,0 +1,21 @@
+<!--pages/10-slot/slot.wxml-->
+
+<!-- 
+
+  自定义组件中，使用<slot name="">定义插槽，并开启
+  options:{
+    multipleSlots : true
+  },
+  页面中在插槽位置添加属性 slot="" 
+
+  【使用插槽可以在需要改变其他元素时，有效避免组件通信=>子向父通信】
+
+ -->
+<top-header>
+  <button type="default" size="mini" slot="left" bindtap="handleTap">返回</button>
+  <button type="default" size="mini" slot="right">前进</button>
+</top-header>
+
+<view class="icon-wrapper {{isShow ? 'show':''}}"> 
+  <icon type="warn" size="300rpx"></icon>
+</view>

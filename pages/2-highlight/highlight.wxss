@@ -1,0 +1,22 @@
+/* pages/2-highlight/highlight.wxss */
+
+.box{
+  margin: 20px auto;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.item{
+  width: 90px;
+  background-color: rgb(246, 240, 255);
+  border-radius: 4px;
+}
+
+.active{
+  background-color: rgb(255, 221, 240);
+  text-shadow: 1px 1px white;
+}

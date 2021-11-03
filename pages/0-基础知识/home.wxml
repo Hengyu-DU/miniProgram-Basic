@@ -1,0 +1,41 @@
+<!--pages/home/home.wxml-->
+
+<!-- 数据绑定 -->
+<text>{{1 + 1}}</text>
+<view>{{ 1 > 10 ? a1 : b1}}</view>
+
+<!-- 数据绑定 -->
+<view id="demo-{{hello[0]}}">1</view>
+<view id="demo-{{hello[1]}}">2</view>
+<view id="demo-{{hello[2]}}">3</view>
+
+<!-- wx:for 遍历数组，渲染列表 -->
+<view wx:for="{{list}}" wx:key="index">
+{{item}}-{{index}}
+</view>
+
+<!-- wx:for 防止index\item命名冲突 -->
+<view wx:for="{{list}}" wx:key="appindex" wx:for-item="appitem" wx:for-index="appindex">
+{{appitem}}-{{appindex}}
+</view>
+
+<!-- wx:if 条件渲染：
+  wx:if和wx:else渲染的组件，更改状态后会导致DOM的改变，
+  而hidden更改状态后，DOM不变，仅css样式改变（display: none）
+ -->
+<view hidden="{{isHidden}}">我是动态隐藏和显示的组件 CCC</view>
+
+<view wx:if="{{isCreated}}">我是动态创建和删除的组件 AAAA</view>
+<view wx:else>我是动态创建和删除的组件 BBB</view>
+
+<!-- 事件绑定 -->
+<button type="primary" bindtap="handleTap">change</button>
+<!-- 阻止捕获和冒泡：
+  catchtap 阻止冒泡
+  mut-bind:tap 互斥事件
+  capture-bind:tap 捕获事件
+  capture-catch:tap 中断捕获并取消冒泡
+ -->
+<button type="primary" catchtap="handleTap">change</button>
+
+
